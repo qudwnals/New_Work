@@ -28,6 +28,7 @@ export class BasicController {
   getById(@Param('id', ParseIntPipe) id: number): resultDto {
     return this.basicService.getById(id);
   }
+
   @Post('all')
   getAll(): resultDto[] {
     return this.basicService.getAll();

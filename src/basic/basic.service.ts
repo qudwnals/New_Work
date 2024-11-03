@@ -18,7 +18,7 @@ export class BasicService {
   }
 
   getById(id: number): resultDto {
-    const post = this.result.find((post) => post.id === id); //배열에 주어딘  아이디 번호 일치찾기
+    const post = this.result.find((post) => post.id === id); //배열에 주어진  아이디 번호 일치찾기
     if (!post) {
       throw new NotFoundException(`ID가 ${id}인 게시글을 찾을 수 없습니다.`);
     }
